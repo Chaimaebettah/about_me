@@ -1,12 +1,34 @@
-var name = prompt("what is your name?");
-console.log('The user\'s name is ' + name);
-var age = prompt('How old are you?');
-  while(isNaN(parseInt(age))){
-    age = prompt('How old are you?');
-  }
-console.log('The user\'s age is ' + age);
-var hobby = prompt('What is your hobby?');
-console.log('The user\'s hobby is  ' + hobby);
-var place = prompt('what is your favorite place so far?');
-console.log('the user\'s favorite place is :' +place)
-alert('Im'+ ' '+ name + ',' + ' '+ age  + ' ' + 'years old '+ 'I like '+ hobby + ' ' + 'my favorite place is ' +place);
+//I use prompt to ask the user some questions.
+var guess = prompt('do you want to play a guessing game with me? say Yes to start');
+if ((guess.toLowerCase() === 'yes') || (guess.toLowerCase() === 'y')) {  
+    var food = prompt('what my favorite food do you think from these two? Snails or Sushi?');  
+    if (food.toLowerCase() === 'snails') {    
+        alert('Yup, it\'s crazy but it\'s true.');  
+    } else {    
+        alert('No, I love eating Snails.');  
+    }
+} else {  
+    alert('bye ');
+}
+
+var age = prompt('guess how old I am?');
+if (age < '20') {  
+    alert('Ow,im not that young, I\'m 24 years old!');
+} else if ((age >= '20') && (age <= '25')) {  
+    alert('you are close, but Im 24 years old!');
+} else {
+    alert("Im not that old, I\'m 24 years old!")
+}
+
+var language = prompt("of these two, which is my native language? Arabic or Darija?");
+if (language.toLowerCase() === 'darija') {
+    alert(" Yes that\'s true, Darija is a Moroccan dialect of arabic.")
+} else {
+    alert("Nope, it\'s  Darija")
+}
+var siblings = prompt("How many siblings do I have?");
+if (siblings === '2') {
+    alert("That\'s right, I have two sisters.")
+} else {
+    alert("Nope, I have two sisters.");
+}
