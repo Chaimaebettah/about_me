@@ -105,13 +105,13 @@
        city = city.toLowerCase();
      }
      //loop through the cities and check if the answer is correct or no and display all correct answers
-     for(var i = 0; i < cities.length; i++) {
-       if(city === cities[i]) {
+     cities.forEach(function(value){
+       if(city === value) {
          alert('That\'s right! ' + 'I lived in ' + cities.join(', ') + ' before');
          correctAnswers++;
          success = true;
        }
-     }
+     });
      //when the answer is correct(true)stop the game
      if(success) {
        break;
