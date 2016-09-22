@@ -1,4 +1,5 @@
  'use strict';
+ //hi
   //counting how many answers were correcte.
  var correctAnswers = 0;
  //ask user about their name.
